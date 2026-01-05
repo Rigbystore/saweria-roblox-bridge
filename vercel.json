@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/saweria-webhook.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/saweria-webhook",
+      "dest": "api/saweria-webhook.js"
+    }
+  ]
+}
